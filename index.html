@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+    <title>Exercise 2</title>
+    <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            table {
+            table-layout: fixed ;
+            width: 100% ;
+            }
+            td {
+            width: 25% ;
+            }
+            .imgc {
+            object-fit: cover;
+            width: 230px;
+            height: 230px;
+            }
+            body {
+            overflow-x: hidden;
+            }
+            section {
+            border:3;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            }
+
+            .container {
+            background-color: #fff;
+            border: 1px solid #dddfe2;
+            border-radius: 8px;
+            padding: 32px;
+            max-width: 400px; /* decreased from 600px */
+            width: 100%;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+
+            h1 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+            .form-group {
+                margin-bottom: 16px;
+            }
+            label {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            .form-control {
+                background-color: #f0f2f5;
+                border: none;
+                border-radius: 8px;
+                box-sizing: border-box;
+                color: #172b4d;
+                font-size: 16px;
+                padding: 12px;
+                width: 100%;
+            }
+            .btn-primary {
+                background-color: #1877f2;
+                border: none;
+                border-radius: 8px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 12px 24px;
+            }
+
+        
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" onclick="toggleNav()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div id="navbarContent" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            </ul>
+    
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+    function toggleNav() {
+        var navbarContent = document.getElementById("navbarContent");
+        if (navbarContent.classList.contains("collapse")) {
+            navbarContent.classList.remove("collapse");
+        } else {
+            navbarContent.classList.add("collapse");
+        }
+    }
+    </script>
+    <br>
+    <table class="table table-striped table-bordered table-hover">
+        <tr class="bg-dark text-warning">
+            <th>ATHLETE</th>
+            <th>DESCRIPTION</th>
+            <th>NET WORTH</th>
+        </tr>
+        <tr class="bg-secondary text-white">
+            <td><img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(1274x736:1276x734)/origin-imgresizer.eurosport.com/2022/12/03/3502507-71397308-2560-1440.jpg" height="200" class="imgc rounded"></td>
+            <td><b>Lionel Messi</b><br>A professional soccer player from
+                Argentina who is widely regarded as one of the
+                greatest players of all time. He has spent the
+                majority of his career playing for Barcelona
+                Football Club in Spain, where he has won numerous
+                awards and accolades, including multiple Ballon d'Or
+                awards, which are given to the best player in the world.</td>
+            <td>$620 Million</td>
+        </tr>
+        <tr class="bg-secondary text-white">
+            <td><img src="https://media.newyorker.com/photos/63826120196c8ef692b4eba5/3:4/w_1277,h_1703,c_limit/Ronaldo_WC22.png" height="200" class="imgc rounded"></td>
+            <td><b>Cristiano Ronaldo</b><br>A Portuguese professional soccer
+                player who is considered one of the greatest players
+                of all time. He has played for several top clubs,
+                including Manchester United, Real Madrid, and
+                Juventus. Ronaldo has won numerous awards and
+                accolades throughout his career, including multiple
+                Ballon d'Or awards, which are given to the best player
+                in the world. He has also helped his teams win numerous
+                titles, including multiple La Liga titles with Real
+                Madrid and several Serie A titles with Juventus.</td>
+            <td>$490 Million</td>
+        </tr>
+        <tr class="bg-secondary text-white">
+            <td><img src="https://stylecaster.com/wp-content/uploads/2022/01/neymar-net-worth.png" height="200" class="imgc rounded"></td>
+            <td><b>Neymar</b><br>Neymar da Silva Santos Júnior, commonly known as Neymar, is a Brazilian professional soccer player who plays as a forward for Paris Saint-Germain Football Club and the Brazilian national team. He is considered one of the most talented and skillful players in the world and has been a standout performer throughout his career.</td>
+            <td>$200 Million</td>
+        </tr>
+        <tr class="bg-secondary text-white">
+            <td><img src="https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2022-09/Kylian%20Mbappe%20PSG%20042922%20169.jpg" height="200" class="imgc rounded"></td>
+            <td><b>Kylian Mbappé</b><br>A French professional soccer player
+                who plays as a forward for Paris Saint-Germain Football
+                Club and the French national team. He is considered
+                one of the most promising young talents in the world
+                and has already achieved a great deal of success in
+                his young career.</td>
+            <td>$150 Million</td>
+        </tr>  
+    </table>
+    <script>
+        function toggleNav() {
+            var navbarContent = document.getElementById("navbarContent");
+            if (navbarContent.classList.contains("collapse")) {
+                navbarContent.classList.remove("collapse");
+            } else {
+                navbarContent.classList.add("collapse");
+            }
+        }
+        </script>
+    <section>
+        <div class="container">
+          <h1>Receive our Newsletters today!</h1>
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="frequency">How often would you like to receive newsletters from us?</label><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="frequency" id="daily" value="daily">
+                <label class="form-check-label" for="daily">Daily</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="frequency" id="weekly" value="weekly">
+                <label class="form-check-label" for="weekly">Weekly</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="frequency" id="monthly" value="monthly">
+                <label class="form-check-label" for="monthly">Monthly</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="frequency" id="no" value="no">
+                <label class="form-check-label" for="no">I would not like to receive Newsletters</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success">Subscribe</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+          </form>
+        </div>
+      </section>
+</body>
+</html>
